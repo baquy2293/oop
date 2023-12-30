@@ -31,7 +31,7 @@ public class Xuli {
     }
 
     public int isNullKhachHang(String id) {
-        for (int i = 0; i < listSp.size(); i++) {
+        for (int i = 0; i < listKh.size(); i++) {
             if (listKh.get(i).getMaKh().equals(id)) {
                 return i;
             }
@@ -44,6 +44,11 @@ public class Xuli {
     public void showListSP() {
         for (SanPham sanPham : listSp) {
             sanPham.show();
+        }
+    }
+    public void showListKH() {
+        for (KhachHang kh : listKh) {
+            kh.show();
         }
     }
 
@@ -71,7 +76,7 @@ public class Xuli {
     // c 
 
     public void suadoi() {
-        System.out.println("Nhap ma khach hang ");
+        System.out.println("Nhap ma khach hang de sua doi ");
         int tmp = isNullKhachHang(scanner.next());
         Date d = null;
         if (tmp != -1) {
