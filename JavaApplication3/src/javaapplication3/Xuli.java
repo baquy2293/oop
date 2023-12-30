@@ -40,7 +40,6 @@ public class Xuli {
         return -1;
     }
 
-    
     //d
     public void showListSP() {
         for (SanPham sanPham : listSp) {
@@ -80,24 +79,66 @@ public class Xuli {
             System.out.println("nhap ho ten");
             String ht = scanner.next();
             System.out.println("Nhap ngay thang nam sinh");
-            
+
             try {
-               d = spd.parse(scanner.next()); 
+                d = spd.parse(scanner.next());
             } catch (Exception e) {
                 System.out.println(e);
             }
-            
-            listKh.set(tmp,new KhachHang(listKh.get(tmp).getMaKh(),ht,listKh.get(tmp).getTo(),listKh.get(tmp).getPhuong(),listKh.get(tmp).getQuan() ,listKh.get(tmp).getThanhpho(), d));  
+
+            listKh.set(tmp, new KhachHang(listKh.get(tmp).getMaKh(), ht, listKh.get(tmp).getTo(), listKh.get(tmp).getPhuong(), listKh.get(tmp).getQuan(), listKh.get(tmp).getThanhpho(), d));
         }
     }
-    
-    
-    public void sapxep(){
-        for (int i = 0; i <listSp.size()-1; i++) {
-            for(int j = i+1 ; j < listSp.size();j++){
-                
+
+    public void sapxep() {
+        for (int i = 0; i < listSp.size() - 1; i++) {
+            for (int j = i + 1; j < listSp.size(); j++) {
+                if (listSp.get(i).getDongia() > listSp.get(j).getDongia()) {
+                    SanPham sp1 = listSp.get(i);
+                    listSp.set(i, listSp.get(j));
+                    listSp.set(j, sp1);
+                }
             }
         }
+    }
+
+    public int testConHang(String ma, int soLuong) {
+
+        int index = isNullSanPham(ma);
+        if (index != -1 && soLuong < listSp.get(index).getSoluong()) {
+            return index;
+        }
+
+        return -1;
+    }
+
+    // e 
+    public void muaHanag() {
+        boolean t = true;
+        double tien = 0;
+        int soluongmua = 0;
+        do {
+            showListSP();
+            System.out.println("Nhap ma hang ban muon mua");
+            String name = scanner.next();
+            System.out.println("Nhap so luong ban muon mua");
+            int sl = Integer.parseInt(scanner.next());
+            int index = testConHang(name, sl);
+            if (index != -1) {
+                tien += listSp.get(index).getDongia() * sl;
+                listSp.set(index, new SanPham(name, listSp.get(index).getTen(), listSp.get(index).getDongia(), listSp.get(index).getNgaysx(), listSp.get(index).getSoluong() - sl));
+                sl++;
+            } else {
+                System.out.println("so luong khong du dap ung nhu cau Hoac da he hang va khong ton tai san pham");
+            }
+
+            System.out.println("mua tiep chon nut a");
+            if (scanner.next().contains("a")) {
+                t = false;
+            }
+        } while (!t);
+        System.out.println("Ban da mua " + soluongmua + " don hang va tong so tien la " + tien);
+
     }
 
 }

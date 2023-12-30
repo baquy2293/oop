@@ -16,8 +16,11 @@ public class JavaApplication3 {
     public static void main(String[] args) {
         // TODO code application logic here
       Xuli xuli = new Xuli();
-      xuli.themSanPham(2);
-      xuli.showList();
+//      xuli.themSanPham(2);
+//      xuli.showListSP();
+//      xuli.sapxep();
+//      xuli.showListSP();
+xuli.muaHanag();
     }
     
 }
