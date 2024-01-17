@@ -1,0 +1,2 @@
+masinhvien=1, hoten=1, ngaysinh=1, gioitinh=nam, diemtb=1.0hocphi=1.0
+masinhvien=5, hoten=5, ngaysinh=5, gioitinh=nam, diemtb=5.0hocphi=5.0

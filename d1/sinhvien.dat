@@ -1,0 +1,4 @@
+Person{hoten=null, ngaysinh=1, diachi=1, gioitinh=nam}masinhvien=1, email=1, diemtk=1.0}
+Person{hoten=null, ngaysinh=1, diachi=1, gioitinh=nam}masinhvien=1, email=1, diemtk=1.0}
+Person{hoten=5, ngaysinh=55, diachi=5, gioitinh=nu}masinhvien=5, email=5, diemtk=5.0}
+Person{hoten=6, ngaysinh=6, diachi=6, gioitinh=nu}masinhvien=6, email=6, diemtk=6.0}

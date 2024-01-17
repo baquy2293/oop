@@ -1,0 +1,9 @@
+masinhvien=2, hoten=2, ngaysinh=2, gioitinh=nuw, diemtb=2.0donvi=2, luong=2.0
+masinhvien=7, hoten=7, ngaysinh=7, gioitinh=nuw, diemtb=7.0donvi=7, luong=7.0
+masinhvien=7, hoten=7, ngaysinh=7, gioitinh=nuw, diemtb=7.0donvi=7, luong=7.0
+masinhvien=4, hoten=4, ngaysinh=4, gioitinh=nuw, diemtb=4.0donvi=4, luong=4.0
+masinhvien=7, hoten=7, ngaysinh=7, gioitinh=nuw, diemtb=7.0donvi=7, luong=7.0
+masinhvien=4, hoten=4, ngaysinh=4, gioitinh=nuw, diemtb=4.0donvi=4, luong=4.0
+masinhvien=4, hoten=4, ngaysinh=4, gioitinh=nuw, diemtb=4.0donvi=4, luong=4.0
+masinhvien=5, hoten=5, ngaysinh=5, gioitinh=nuw, diemtb=5.0donvi=5, luong=5.0
+masinhvien=5, hoten=5, ngaysinh=5, gioitinh=nuw, diemtb=5.0donvi=5, luong=5.0
